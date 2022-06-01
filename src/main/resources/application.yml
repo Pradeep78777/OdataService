@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgres-fb9909dd-8a5d-4b68-a110-f821f29fe5a0.postgres.database.azure.com:5432/fwsNMJLcTPdk?sslmode=verify-ca&sslfactory=org.postgresql.ssl.DefaultJavaSSLFactory
+    username: cf86c968068e
+    password: b809abd18190
+    hikari:
+      validationTimeout: 600000
+      maximumPoolSize: 20
+      connection-timeout: 60000
+    tomcat:
+      validation-query: SELECT 1
+      test-on-borrow: true
+      validation-interval: 30000
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: OdataService
+    version: 1.0

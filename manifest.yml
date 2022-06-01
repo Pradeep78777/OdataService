@@ -1,0 +1,9 @@
+applications:
+- name: ODataService
+  memory: 2048M
+  instances: 1
+  path: target/ODataService-2.7.0.jar
+  env:
+    TARGET_RUNTIME: tomee7
+    SET_LOGGING_LEVEL: '{ROOT: INFO, com.sap.cloud.sdk: INFO}'
+    JBP_CONFIG_SAPJVM_MEMORY_SIZES: 'metaspace:1024m..'
